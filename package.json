@@ -1,0 +1,37 @@
+{
+  "name": "class-employee-rest",
+  "version": "0.0.1",
+  "description": "A small employee REST API",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "pretty": "prettier --single-quote --write **/**.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caal-15/class-employee-rest.git"
+  },
+  "keywords": [
+    "rest",
+    "restify",
+    "API"
+  ],
+  "author": "Carlos Gonzàlez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caal-15/class-employee-rest/issues"
+  },
+  "homepage": "https://github.com/caal-15/class-employee-rest#readme",
+  "dependencies": {
+    "husky": "^2.2.0",
+    "nodemon": "^1.19.0",
+    "prettier": "^1.17.0",
+    "restify": "^8.3.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run pretty"
+    }
+  }
+}
