@@ -6,7 +6,8 @@
   "scripts": {
     "start": "nodemon app.js",
     "pretty": "prettier --single-quote --write **/**.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create-tables": "node scripts/createTables.js"
   },
   "repository": {
     "type": "git",
@@ -25,9 +26,11 @@
   "homepage": "https://github.com/caal-15/class-employee-rest#readme",
   "dependencies": {
     "husky": "^2.2.0",
+    "knex": "^0.16.5",
     "nodemon": "^1.19.0",
     "prettier": "^1.17.0",
-    "restify": "^8.3.1"
+    "restify": "^8.3.1",
+    "sqlite3": "^4.0.7"
   },
   "husky": {
     "hooks": {
