@@ -13,6 +13,6 @@ const wrapTableCreationMethod = tableCreationMethod =>
     .catch(tableName => console.log(`Error Creating ${tableName}`));
 
 wrapTableCreationMethod(employeeRepository.createEmployeesTable).then(() => {
-  console.log('Done')
+  console.log('Done');
   db.destroy();
 });
